@@ -8,19 +8,23 @@
     <script src="main.js" type="module"></script>
     <style>
         body {
-            background-color: navy;
+            background-image: url("https://images.unsplash.com/photo-1486520299386-6d106b22014b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-size: auto;
+            background-repeat: no-repeat;
+            height: 100%;
         }
 
         .container {
             display: flex;
-            align-items: center !important;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
         }
 
         .box {
-            margin: 0 auto;
             width: 400px;
             height: 220px;
-            background-color: #f8f8ff;
+            background-color: aliceblue;
             border-radius: 10px;
             color: black;
             display: flex;
@@ -29,6 +33,7 @@
             justify-content: center;
             align-items: center;
             font-family: monospace;
+            box-shadow: 5px 5px 5px rgb(76, 119, 156) inset;
         }
 
         .inputs {
@@ -46,17 +51,24 @@
         }
 
         button {
-            background-color: navy;
+            background-color: lightblue;
+            box-shadow: 0 5px lightgray;
             border: 1px solid navy;
-            box-shadow: 1px 1px 5px gray;
-            color: #fff;
+            color: black;
             font-weight: bold;
             font-size: 24px;
             border-radius: 5px;
+            font-family: monospace;
         }
 
         button:disabled {
             background-color: gray;
+            box-shadow: none;
+        }
+
+        button:active {
+            transform: translateY(3px);
+            box-shadow: 0 2px lightgray;
         }
 
         p {
@@ -79,7 +91,7 @@
                 <input type="number" id="inputArea" />
                 <button class="checkBtn">Ellenőrzés</button>
             </div>
-            <p id="life"></p>
+            <p id="guesses"></p>
         </div>
     </div>
 </body>
