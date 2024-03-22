@@ -13,6 +13,7 @@ body {
 }
 
 .box {
+  margin: 15px;
   width: 400px;
   height: 220px;
   background-color: aliceblue;

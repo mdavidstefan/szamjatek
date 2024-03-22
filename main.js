@@ -24,5 +24,6 @@ function check() {
 
   document.getElementById("guesses").textContent =
     "Nincs több próbálkozási lehetőség!";
+    document.getElementById("result").textContent = "Most nem sikerült.."
   document.querySelector(".checkBtn").disabled = true;
 }
